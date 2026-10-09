@@ -1,0 +1,61 @@
+:root {
+  --dark: #151515;
+  --dark-soft: #1f1f1f;
+
+  --lime: #d3ea76;
+  --lime-deep: #a9c942;
+
+  --blue: #81b6e4;
+  --blue-deep: #4c8bc2;
+
+  --gray: #888888;
+  --gray-soft: #b4b4b4;
+
+  --white: #ffffff;
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+
+  --border: #e7e4dc;
+  --border-strong: #d8d4c8;
+
+  --shadow-sm: 0 1px 2px rgba(21, 21, 21, 0.04), 0 4px 16px rgba(21, 21, 21, 0.05);
+  --shadow-md: 0 8px 28px rgba(21, 21, 21, 0.08);
+
+  --font: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 14px;
+  --radius-lg: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: var(--font);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Keeps an element scrollable but hides the native scrollbar */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Rendered AI text */
+.md-body > :last-child {
+  margin-bottom: 0 !important;
+}
